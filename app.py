@@ -38,9 +38,9 @@ def bot():
     if(str(msg_in_json["events"][0]["message"]["text"]) == "ตั้งค่า"):
       replyStack.append('คุณสามารถทำการตั้งค่าได้ดังนี้\n1. เพิ่มบัตรเครดิต\n2. ตั้งค่าการแจ้งเตือน')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "รองเท้า"):
-     replyStack.append('รองเท้า nike กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th/Nike-Roshe-One-Women's-and-Men's-Running-Shoes-Sneakers-Grey-white-i.29977109.519526526')
+      replyStack.append('รองเท้า nike กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th/Nike-Roshe-One-Women's-and-Men's-Running-Shoes-Sneakers-Grey-white-i.29977109.519526526')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "กระเป๋า"):
-     replyStack.append('มีกระเป๋า กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B9%E0%B8%99-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%96%E0%B8%B7%E0%B8%AD-laptop-bag-Cartoon-i.24756900.784553265?ads_keyword=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%96%E0%B8%B7%E0%B8%AD&adsid=40239&campaignid=40294&position=0')
+      replyStack.append('มีกระเป๋า กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B9%E0%B8%99-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%96%E0%B8%B7%E0%B8%AD-laptop-bag-Cartoon-i.24756900.784553265?ads_keyword=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%8B%E0%B8%B2%E0%B8%96%E0%B8%B7%E0%B8%AD&adsid=40239&campaignid=40294&position=0')
 
     
     
