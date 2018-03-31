@@ -28,8 +28,9 @@ def bot():
     replyStack.append('นี่คือรูปแบบข้อความที่รับส่ง')
     
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
-    replyStack.append(str(msg_in_json["events"][0]["message"]["text"]))
- 
+    
+    if(str(msg_in_json["events"][0]["message"]["text"]) == "คุณกำลังมองหาอะไรอยู่"):
+      replyStack.append('แถวๆนี้ มีร้านป้าแก้วไก่กรอบ ห่างออกไป 1 กม. บัตรกรุงศรีของคุณมีส่วนลด 20 เปอร์เซนต์')
     reply(replyToken, replyStack[:5])
     
     return 'OK',200
