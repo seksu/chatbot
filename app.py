@@ -28,7 +28,7 @@ def bot():
     replyStack.append('นี่คือรูปแบบข้อความที่รับส่ง')
     
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
-    replyStack.append(msg_in_string)
+    replyStack.append(msg_in_string.data)
     reply(replyToken, replyStack[:5])
     
     return 'OK',200
