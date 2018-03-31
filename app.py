@@ -29,7 +29,7 @@ def bot():
     
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     replyStack.append(msg_in_string)
-    if(msg_in_json["events"][1]['text'] == "\u0e2b\u0e32\u0e23\u0e49\u0e32\u0e19\u0e41\u0e19\u0e30\u0e19\u0e33"):
+    if(msg_in_json["events"][0]['text'] == "\u0e2b\u0e32\u0e23\u0e49\u0e32\u0e19\u0e41\u0e19\u0e30\u0e19\u0e33"):
       replyStack.append('แถวๆนี้ มีร้านป้าแก้วไก่กรอบ ห่างออกไป 1 กม. บัตรกรุงศรีของคุณมีส่วนลด 20 เปอร์เซนต์')
     reply(replyToken, replyStack[:5])
     
