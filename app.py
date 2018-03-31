@@ -30,7 +30,7 @@ def bot():
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     
     if(str(msg_in_json["events"][0]["message"]["text"]) == "คุณกำลังมองหาอะไรอยู่"):
-      replyStack.append('คุณสามารถพิมพ์สินค้าที่คุณสนใจเพื่อค้นหาโปรโมชั่นดีๆได้')
+      replyStack.append('คุณสามารถพิมพ์สินค้าที่คุณสนใจเพื่อค้นหาโปรโมชั่นดีๆได้ เช่น รองเท้า กระเป๋า เสื้อกันหนาว')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "หาร้านแนะนำ"):
       replyStack.append('แถวๆนี้ มีร้านป้าแก้วไก่กรอบ ห่างออกไป 1 กม. บัตรกรุงศรีของคุณมีส่วนลด 20 เปอร์เซนต์')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "ร้านค้าออนไลน์"):
@@ -39,9 +39,14 @@ def bot():
       replyStack.append('คุณสามารถทำการตั้งค่าได้ดังนี้\n1. เพิ่มบัตรเครดิต\n2. ตั้งค่าการแจ้งเตือน')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "รองเท้า"):
       replyStack.append('รองเท้า nike กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th')
+      replyStack.append('รองเท้า adidas กำลังลดราคา 8% เพียงจ่ายผ่านบัตรกรุงศรี click : https://www.lazada.co.th')
+      replyStack.append('รองเท้า vans กำลังลดราคา 5% เพียงจ่ายผ่านบัตรกรุงศรี click : https://www.11street.co.th')
     if(str(msg_in_json["events"][0]["message"]["text"]) == "กระเป๋า"):
       replyStack.append('มีกระเป๋า กำลังลดราคา 10% เพียงจ่ายผ่านบัตรกรุงศรี click : https://shopee.co.th')
-
+      replyStack.append('มีกระเป๋า กำลังลดราคา 5% เพียงจ่ายผ่านบัตรกรุงศรี click : https://lazada.co.th')
+    if(str(msg_in_json["events"][0]["message"]["text"]) == "เสื้อกันหนาว"):
+      replyStack.append('เสื้อกันหนาว UNIQLO กำลังลดราคา 16% เพียงจ่ายผ่านบัตรกรุงศรี click : https://www.lazada.co.th')
+      replyStack.append('เสื้อกันหนาว กำลังลดราคา 5% เพียงจ่ายผ่านบัตรกรุงศรี click : https://11street.co.th')
     
     
     reply(replyToken, replyStack[:5])
