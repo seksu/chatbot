@@ -29,7 +29,7 @@ def bot():
     
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     replyStack.append(str(msg_in_json["events"][1]['text']))
-    reply(replyToken, replyStack[:5])
+    reply(replyToken, replyStack[:2])
     
     return 'OK',200
  
